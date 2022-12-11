@@ -1,6 +1,8 @@
 import pandas as pd
 import streamlit as st
 
+st.title(":gift: Hediye Çekiliş Uygulaması") 
+
 # "st.session_state object:", st.session_state
 
 if "df_result" not in st.session_state:
