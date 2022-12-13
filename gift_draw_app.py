@@ -56,7 +56,7 @@ def sendMail():
         st.warning('Her bir e-posta farklı olmalıdır')
         st.stop()
         
-    yag = yagmail.SMTP(st.secrets("EMAIL"), st.secrets("PASSWORD"))
+    yag = yagmail.SMTP(st.secrets["EMAIL"], st.secrets["PASSWORD"])
     start = 0
     end = len(st.session_state.df_result_gift)
     st.session_state.df_result_gift["gift_isim"] = np.nan
